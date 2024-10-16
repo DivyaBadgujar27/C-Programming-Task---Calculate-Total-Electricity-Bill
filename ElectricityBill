@@ -1,8 +1,10 @@
-void main ()
+#include <stdio.h>
+
+int main ()
 {
     int unit;
     float total,sur;
-    clrscr();
+    
     printf("\nTo Calculate Total Electricity Bill");
     printf("\nEnter Total Units Utilized = ");
     scanf("%d",& unit);
@@ -25,10 +27,10 @@ void main ()
     {
       total = 220+((unit-250)*1.50);
     }
-    sur = total*0.20;
+    sur = total*0.20; // surcharge is 20%
     total = total+sur;
     printf("\nTotal Electricity Bill = Rs.%.2f",total);
     
-    getch();
+    return 0;
 }
 
